@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        
+        <title>job application form</title>
+       
+       <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                
+              }
+
+            body{
+                background-color: #ccc;
+            }
+
+            .container {
+                max-width: 900px;
+                margin:0 auto;
+            }
+
+            .apply-box {
+                max-width: 600px;
+                padding : 20px;
+                background-color: white;
+                margin : 0 auto;
+                margin-top: 50px;
+                box-shadow: 4px 3px 5px rgba(1, 1, 1, 0.1);
+                border-radius: 10px;
+            }
+
+            
+       </style>
+
+    </head>
+
+    <body>
+        <div class = "container">
+
+            <div class="apply-box"> 
+                <h1>Job Application <h4>(web)</h4></h1>
+                <form>
+                    <div class = "form">
+                        <div class = "form-control">
+                            <label>Full Name : </label>
+                            <input type="text" placeholder="Enter your full name"/>
+
+                        </div>
+                        <br>
+
+                        <div class = "form-control">
+                            <label>Last Name : </label>
+                            <input type="text" placeholder="Enter your last name"/>
+
+                        </div>
+                        <br>
+                        <div class = "form-control">
+                            <label>Email : </label>
+                            <input type="email" placeholder="Enter your email address"/>
+
+                        </div>
+                        <br>
+                        <div class = "form-control">
+                            <label>Job role : </label>
+                            <select>
+                                <option>select</option>
+                                <option>Web developer</option>
+                                <option>Web designer</option>
+                                <option>Full stack developer</option>
+                                <option>Front end developer</option>
+                                <option>Back end developer</option>
+                            </select>
+                        </div>
+                        <br>
+                        <div>
+                            <label>Address : </label>
+                            <textarea id = "address" name = "address" row = "4" cols="50" placeholder="Enter address"></textarea>
+
+                        </div>
+                        <br>
+                        <div class = "form-control">
+                            <label>City : </label>
+                            <input type="text" placeholder=""/>
+
+                        </div>
+                        <br>
+                        <div class = "form-control">
+                            <label>Pin code: </label>
+                            <input type="number" placeholder=""/>
+
+                        </div>
+                        <br>
+                        <div class = "form-control">
+                            <label>Start date : </label>
+                            <input type="Date" />
+
+                        </div>
+                        <br>
+                        <div class = "form-control">
+                            <label>Upload your CV : </label>
+                            <input type="file" />
+                        </div>
+                        <br>
+
+
+
+
+                    </div>
+                    <div class = "button-container">
+                        <button type="submit">Submit</button>
+                </form>             
+            </div>
+
+
+        </div>
+       
+    </body>
+</html>
