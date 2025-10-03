@@ -93,7 +93,36 @@
             .features{
                 display: flex;
                 margin-top: 100px;
+                gap: 20px;
+                justify-content: center;
+                margin-bottom : 50px;
+
+
             }
+
+            .feature{
+                display: flex;
+                gap : 20px;
+                transition : 0.2s ease-in-out;
+                padding: 20px;
+                
+
+            }
+
+            .feature:hover{
+                transition : 0.2s ease-in-out;
+                box-shadow : 5px 5px 5px rgba(32, 64, 6, 0.05);
+                background-color:lightblue;
+            }
+
+            .divider{
+                border : 1px solid grey;
+                margin : 20px 0px;
+
+
+            }
+
+
 
             
 
@@ -136,7 +165,7 @@
                 </div>
             </div>
             <section class = "features">
-                    <div class = "features">
+                    <div class = "feature">
                         <img src = "https://image.shutterstock.com/image-vector/3d-special-triple-coupons-coupon-260nw-2548310223.jpg" alt = "discount voucher" height="100px" width="100px">
                         <div class = "feature_content">
                             <h3>Discount voucher</h3>
@@ -144,14 +173,15 @@
                         </div>
                     </div>
 
-                     <div class = "features">
+                     <div class = "feature">
                         <img src = "https://image.shutterstock.com/image-photo/gourmet-food-basket-on-white-260nw-2469284493.jpg" alt = "discount voucher" height="100px" width="100px">
                         <div class = "feature_content">
                             <h3>Fresh Healthy Food</h3>
                             lorem ipsum dolor sit amet
+                        </div>
                     </div>
 
-                     <div class = "features">
+                     <div class = "feature">
                         <img src = "https://image.shutterstock.com/image-vector/home-illustration-simple-house-isolated-260nw-2540098311.jpg" alt = "discount voucher" height="100px" width="100px">
                         <div class = "feature_content">
                             <h3>Fast home delivery</h3>
@@ -159,6 +189,12 @@
                         </div>
                     </div>
                 </section>
+
+                <div class = "divider"></div>
+
+        
+
+
 
             
 
