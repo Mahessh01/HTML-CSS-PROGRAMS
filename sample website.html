@@ -91,6 +91,57 @@
                 height: 500px;
 
             }
+            button{
+                padding: 10px 15px;
+                border: none;
+                transition: 0.2 ease-in-out;
+            }
+            button:hover{
+                opacity: 0.8;
+                transition: 0.2 ease-in-out;
+
+            }
+            .primary-btn{
+                background-color: red;
+                color: white;
+            }
+            
+            .about-music{
+                padding-top: 250px;
+                display: grid;
+                place-items: center;
+                gap: 50px;
+                text-align: center;
+                margin-bottom: 50px;
+                
+            }
+            .video-section{
+                background-image: url("https://imgs.search.brave.com/LhVX4BfPuU8eVc_ioaB9vlRx6xSJPKGHL7NruzoZ8dw/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvNDg1/MzkyNjk2L3Bob3Rv/L2NvbmNlcnQtY3Jv/d2QuanBnP3M9NjEy/eDYxMiZ3PTAmaz0y/MCZjPXg1TmxnLW45/MG9XczhkN19DU1It/ZERPWGRSRTVtcmtM/SmtKci1xVmdLSDA9");
+                place-items: center;
+                color: white;
+                text-align: center;
+                min-height: 400px;
+                background-size: 100% 100%;
+                display: grid;
+            }
+            .video-section .container{
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+
+
+            }
+            .hero-section, .video-section{
+                position: relative;
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+
+           
+
+            
+           
 
 
         </style>
@@ -146,6 +197,44 @@
                         <img src = "https://imgs.search.brave.com/oaIpT9-cHvSukq5g9f7DvEdy17Cw0fsBf32d4JAFko0/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93d3cu/cG5nbWFydC5jb20v/ZmlsZXMvMTYvTGFw/dG9wLVRvcC1WaWV3/LVBORy1GcmVlLURv/d25sb2FkLnBuZw">
                 </div>
             </section>
+            <section class = "about-music container">
+                <h3>The movie and TV collection you always wished for. Granted.</h3>
+                <h4>
+                    With over 100,000 movies and TV shows to choose from, there's something 
+                    great to watch on myTunes and if you want on Orange. you will be able to enjoy tremendous selection of your favrouite content in 4K HDR.
+
+                </h4>
+                <button class = "primary-btn">Read more</button>
+                <div class ="mac">
+                    <img src = "https://imgs.search.brave.com/IRjyG4R_8KPgqqN22Eirg0pSYhYZcHXsMV5waRVKmcM/rs:fit:0:180:1:0/g:ce/aHR0cHM6Ly9wdXJl/cG5nLmNvbS9wdWJs/aWMvdXBsb2Fkcy90/aHVtYm5haWwvL3B1/cmVwbmcuY29tLW1h/Y2Jvb2ttYWNib29r/bm90ZWJvb2tjb21w/dXRlcnNhcHBsZS1p/bm1hY2Jvb2stZmFt/aWx5YXBwbGUtbGFw/dG9wcy0xNzAxNTI4/MzYxNjI0emFxbzgu/cG5n">
+                </div>
+
+            </section>
+            <section class = "video-section" id="video">
+                <div class = "container">
+                    <h3>A world of entertainment. Available wherever you are.</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                </div>
+
+            </section>
+            <section class = "gift-section container" id = "gift">
+                <div class ="gift-card">
+                    <img src ="https://imgs.search.brave.com/ITfJby8k6Hr1lH_Uksmbm5W-xNTgOT1ge6LSltugVCc/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93d3cu/cG5nYXJ0cy5jb20v/ZmlsZXMvMS9HaWZ0/LUNhcmQtRnJlZS1Q/TkctSW1hZ2UucG5n">
+
+                </div>
+                <div class="gift-content">
+                    <h3>Gift Card</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p>
+                        Already have an Orange myTunes Gift Card..?
+                    </p>
+                    <hr>
+                
+
+                </div>
+            </section>
+
+        </main>
 
     </body>
 </html>
