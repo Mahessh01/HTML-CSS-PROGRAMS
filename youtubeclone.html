@@ -22,7 +22,7 @@
             
         }
         .logo img{
-            width: 150px;
+            width: 70px;
             height: auto;
         }
         .center-nav{
@@ -83,6 +83,40 @@
             background-color: rgb(238,238,238);
             color: rgb(67,67,67);
         }
+        aside{
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            align-items: center;
+            text -align: center;
+        }
+        .container{
+            display: flex;
+        }
+        .side-icon{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            
+        }
+        .side-icon img{
+            width: 30px;
+            
+        }
+        .side-icon p{
+            font-size: 13px;
+            margin-top: -5px;
+        }
+        .bars{
+            
+            margin-top: 20px;
+        }
+        .main{
+            width: 100%;
+        }
+
 
 
 
@@ -90,52 +124,8 @@
        </style>
     </head>
     <body>
-        <header>
-            <nav>
-                <div class = "logo">
-                    <img src ="https://pngimg.com/uploads/youtube/small/youtube_PNG12.png" alt = "youtube logo" height = "80px" width ="80px"><img src = "https://pngimg.com/uploads/youtube/small/youtube_PNG13.png" alt = "youtube written" height ="80px", width = "100px">
-                </div>
-                <div class= "center-nav">
-                    <div class = "search">
-                        <input type = "text"/>
-                        <button>
-                            <img src = "https://www.svgrepo.com/show/532555/search.svg" alt = "search" height = "20px" width = "20px">
-                        </button>
-                    </div>
-                    <div class = "mic">
-                        <img src = "https://www.svgrepo.com/show/501263/mic.svg" alt = "mic" height = "20px" width = "20px">
-                    </div>
-
-                </div>
-                <div class="side-nav">
-                        <i>
-                            <img src = "https://www.svgrepo.com/show/491198/camera-outlined.svg" alt = "video-add" height = "20px" width = "20px">
-                        </i>
-                         <i>
-                            <img src = "https://www.svgrepo.com/show/431588/dot-grid.svg" alt = "dot grid" height = "20px" width = "20px">
-                        </i>
-                         <i>
-                            <img src = "bell icon" alt = "bell-icon">
-                        </i>
-                         <i>
-                            <img src = "Avatar" alt = "profile">
-                        </i>
-                    </div>
-                
-                    
-            </nav>
-            <div class ="tags">
-                <div class = "tag dark">All</div>
-                <div class = "tag light">Mixes</div>
-                <div class = "tag light">Crypto</div>
-                <div class = "tag light">Music</div>
-                <div class = "tag light">Live</div>
-                <div class = "tag light">Gaming</div>
-                
-            </div>
-
-        </header>
-        <aside>
+        <div class="container">
+            <aside>
             <div class = "bars">
                 <img src = "https://www.svgrepo.com/show/472427/bars.svg" alt = "bars icon" height = "20px" width = "20px">
             </div>
@@ -164,6 +154,59 @@
                 <p>library</p>
             </div>
         </aside>
+        <div class="main">
+            <header>
+            <nav>
+                <div class = "logo">
+                    <img src ="https://www.svgrepo.com/show/475700/youtube-color.svg" alt = "youtube logo" height = "15px" width = "15px"><img src = "https://www.svgrepo.com/show/303271/youtube-2-logo.svg" alt = "youtube written" height ="100px", width = "100px">
+                </div>
+                <div class= "center-nav">
+                    <div class = "search">
+                        <input type = "text"/>
+                        <button>
+                            <img src = "https://www.svgrepo.com/show/532555/search.svg" alt = "search" height = "20px" width = "20px">
+                        </button>
+                    </div>
+                    <div class = "mic">
+                        <img src = "https://www.svgrepo.com/show/501263/mic.svg" alt = "mic" height = "20px" width = "20px">
+                    </div>
+
+                </div>
+                <div class="side-nav">
+                        <i>
+                            <img src = "https://www.svgrepo.com/show/491198/camera-outlined.svg" alt = "video-add" height = "40px" width = "40px">
+                        </i>
+                         <i>
+                            <img src = "https://www.svgrepo.com/show/431588/dot-grid.svg" alt = "dot grid" height = "40px" width = "40px">
+                        </i>
+                         <i>
+                            <img src = "https://www.svgrepo.com/show/532089/bell-alt.svg" alt = "bell-icon" height = "40px" width = "40px">
+                        </i>
+                         <i>
+                            <img src = "https://www.svgrepo.com/show/498301/profile-circle.svg" alt = "profile" height = "40px" width = "40px">
+                        </i>
+                    </div>
+                
+                    
+            </nav>
+            <div class ="tags">
+                <div class = "tag dark">All</div>
+                <div class = "tag light">Mixes</div>
+                <div class = "tag light">Crypto</div>
+                <div class = "tag light">Music</div>
+                <div class = "tag light">Live</div>
+                <div class = "tag light">Gaming</div>
+                
+            </div>
+
+        </header>
+        
+        </div>
+            
+            
+
+        </div>
+        
        
         
        
