@@ -19,6 +19,11 @@
             justify-content: space-between;
             align-items: center;
             padding: 10px;
+            position: fixed;
+            top: 0;
+            background-color: white;
+            width: 95%;
+            
             
         }
         .logo img{
@@ -120,6 +125,41 @@
             min-height: 100vh;
             background-color: rgb(240,238,238);
         }
+        .card-container{
+            
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            
+        }
+        .card{
+           margin-top: 30px;
+           max-width: 320px;
+           padding: 10px;
+           display: flex;
+           flex-direction: column;
+        }
+        .avatar-content{
+            padding-top: 10px;
+            display: flex;
+            gap:5px;
+        }
+        .content{
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+
+        }
+        .channel-name{
+            font-weight: bold;
+            font-size: 16px;
+        }
+        .content-status p{
+            display: flex;
+            font-size: 14px;
+            gap: 10px;
+        }
+
+
 
 
 
@@ -159,8 +199,9 @@
                     <p>library</p>
                 </div>
             </aside>
+        
         <div class="main-container">
-            <header>
+        <header>
             <nav>
                 <div class = "logo">
                     <img src ="https://www.svgrepo.com/show/475700/youtube-color.svg" alt = "youtube logo" height = "15px" width = "15px"><img src = "https://www.svgrepo.com/show/303271/youtube-2-logo.svg" alt = "youtube written" height ="100px", width = "100px">
@@ -204,7 +245,8 @@
                 
             </div>
 
-            </header>
+        </header>
+        <main>
             <main>
                 <div class = "card-container">
                     <div class = "card">
@@ -214,9 +256,237 @@
                                 <img src = "https://www.svgrepo.com/show/498301/profile-circle.svg" alt = "channel avatar" height = "40px" width = "40px">
                             </div>
                             <div class = "content">
-                                <h3>Video Title</h3>
-                                <p class = "channel-name">Channel-Name</p>
-                                <p>1M views . 2 days ago</p>
+                                <h3>Coding course</h3>
+                                <p class = "channel-name">Apna coaching</p>
+                                <div class = "content-status">
+                                    <p>1M views . 1 day ago</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class = "card">
+                        <img src = "https://imgs.search.brave.com/-84W8rbNVimsmP5QwkJXeawkQGRj10amw0LuOQZQkjc/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/ZnJlZS12ZWN0b3Iv/bW9kZXJuLXlvdXR1/YmUtdGh1bWJuYWls/LWRlc2lnbi13aXRo/LWF3ZXNvbWUtdGV4/dC10ZW1wbGF0ZV8x/MzYxLTI3MzcuanBn/P3NlbXQ9YWlzX2h5/YnJpZCZ3PTc0MCZx/PTgw" alt = "thumbnail">
+                        <div class = "avatar-content">
+                            <div class = "avatar">
+                                <img src = "https://www.svgrepo.com/show/498301/profile-circle.svg" alt = "channel avatar" height = "40px" width = "40px">
+                            </div>
+                            <div class = "content">
+                                <h3>Coding course</h3>
+                                <p class = "channel-name">Apna coaching</p>
+                                <div class = "content-status">
+                                    <p>1M views . 1 day ago</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class = "card">
+                        <img src = "https://imgs.search.brave.com/-84W8rbNVimsmP5QwkJXeawkQGRj10amw0LuOQZQkjc/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/ZnJlZS12ZWN0b3Iv/bW9kZXJuLXlvdXR1/YmUtdGh1bWJuYWls/LWRlc2lnbi13aXRo/LWF3ZXNvbWUtdGV4/dC10ZW1wbGF0ZV8x/MzYxLTI3MzcuanBn/P3NlbXQ9YWlzX2h5/YnJpZCZ3PTc0MCZx/PTgw" alt = "thumbnail">
+                        <div class = "avatar-content">
+                            <div class = "avatar">
+                                <img src = "https://www.svgrepo.com/show/498301/profile-circle.svg" alt = "channel avatar" height = "40px" width = "40px">
+                            </div>
+                            <div class = "content">
+                                <h3>Coding course</h3>
+                                <p class = "channel-name">Apna coaching</p>
+                                <div class = "content-status">
+                                    <p>1M views . 1 day ago</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class = "card">
+                        <img src = "https://imgs.search.brave.com/-84W8rbNVimsmP5QwkJXeawkQGRj10amw0LuOQZQkjc/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/ZnJlZS12ZWN0b3Iv/bW9kZXJuLXlvdXR1/YmUtdGh1bWJuYWls/LWRlc2lnbi13aXRo/LWF3ZXNvbWUtdGV4/dC10ZW1wbGF0ZV8x/MzYxLTI3MzcuanBn/P3NlbXQ9YWlzX2h5/YnJpZCZ3PTc0MCZx/PTgw" alt = "thumbnail">
+                        <div class = "avatar-content">
+                            <div class = "avatar">
+                                <img src = "https://www.svgrepo.com/show/498301/profile-circle.svg" alt = "channel avatar" height = "40px" width = "40px">
+                            </div>
+                            <div class = "content">
+                                <h3>Coding course</h3>
+                                <p class = "channel-name">Apna coaching</p>
+                                <div class = "content-status">
+                                    <p>1M views . 1 day ago</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class = "card">
+                        <img src = "https://imgs.search.brave.com/-84W8rbNVimsmP5QwkJXeawkQGRj10amw0LuOQZQkjc/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/ZnJlZS12ZWN0b3Iv/bW9kZXJuLXlvdXR1/YmUtdGh1bWJuYWls/LWRlc2lnbi13aXRo/LWF3ZXNvbWUtdGV4/dC10ZW1wbGF0ZV8x/MzYxLTI3MzcuanBn/P3NlbXQ9YWlzX2h5/YnJpZCZ3PTc0MCZx/PTgw" alt = "thumbnail">
+                        <div class = "avatar-content">
+                            <div class = "avatar">
+                                <img src = "https://www.svgrepo.com/show/498301/profile-circle.svg" alt = "channel avatar" height = "40px" width = "40px">
+                            </div>
+                            <div class = "content">
+                                <h3>Coding course</h3>
+                                <p class = "channel-name">Apna coaching</p>
+                                <div class = "content-status">
+                                    <p>1M views . 1 day ago</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class = "card">
+                        <img src = "https://imgs.search.brave.com/-84W8rbNVimsmP5QwkJXeawkQGRj10amw0LuOQZQkjc/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/ZnJlZS12ZWN0b3Iv/bW9kZXJuLXlvdXR1/YmUtdGh1bWJuYWls/LWRlc2lnbi13aXRo/LWF3ZXNvbWUtdGV4/dC10ZW1wbGF0ZV8x/MzYxLTI3MzcuanBn/P3NlbXQ9YWlzX2h5/YnJpZCZ3PTc0MCZx/PTgw" alt = "thumbnail">
+                        <div class = "avatar-content">
+                            <div class = "avatar">
+                                <img src = "https://www.svgrepo.com/show/498301/profile-circle.svg" alt = "channel avatar" height = "40px" width = "40px">
+                            </div>
+                            <div class = "content">
+                                <h3>Coding course</h3>
+                                <p class = "channel-name">Apna coaching</p>
+                                <div class = "content-status">
+                                    <p>1M views . 1 day ago</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class = "card">
+                        <img src = "https://imgs.search.brave.com/-84W8rbNVimsmP5QwkJXeawkQGRj10amw0LuOQZQkjc/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/ZnJlZS12ZWN0b3Iv/bW9kZXJuLXlvdXR1/YmUtdGh1bWJuYWls/LWRlc2lnbi13aXRo/LWF3ZXNvbWUtdGV4/dC10ZW1wbGF0ZV8x/MzYxLTI3MzcuanBn/P3NlbXQ9YWlzX2h5/YnJpZCZ3PTc0MCZx/PTgw" alt = "thumbnail">
+                        <div class = "avatar-content">
+                            <div class = "avatar">
+                                <img src = "https://www.svgrepo.com/show/498301/profile-circle.svg" alt = "channel avatar" height = "40px" width = "40px">
+                            </div>
+                            <div class = "content">
+                                <h3>Coding course</h3>
+                                <p class = "channel-name">Apna coaching</p>
+                                <div class = "content-status">
+                                    <p>1M views . 1 day ago</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class = "card">
+                        <img src = "https://imgs.search.brave.com/-84W8rbNVimsmP5QwkJXeawkQGRj10amw0LuOQZQkjc/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/ZnJlZS12ZWN0b3Iv/bW9kZXJuLXlvdXR1/YmUtdGh1bWJuYWls/LWRlc2lnbi13aXRo/LWF3ZXNvbWUtdGV4/dC10ZW1wbGF0ZV8x/MzYxLTI3MzcuanBn/P3NlbXQ9YWlzX2h5/YnJpZCZ3PTc0MCZx/PTgw" alt = "thumbnail">
+                        <div class = "avatar-content">
+                            <div class = "avatar">
+                                <img src = "https://www.svgrepo.com/show/498301/profile-circle.svg" alt = "channel avatar" height = "40px" width = "40px">
+                            </div>
+                            <div class = "content">
+                                <h3>Coding course</h3>
+                                <p class = "channel-name">Apna coaching</p>
+                                <div class = "content-status">
+                                    <p>1M views . 1 day ago</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class = "card">
+                        <img src = "https://imgs.search.brave.com/-84W8rbNVimsmP5QwkJXeawkQGRj10amw0LuOQZQkjc/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/ZnJlZS12ZWN0b3Iv/bW9kZXJuLXlvdXR1/YmUtdGh1bWJuYWls/LWRlc2lnbi13aXRo/LWF3ZXNvbWUtdGV4/dC10ZW1wbGF0ZV8x/MzYxLTI3MzcuanBn/P3NlbXQ9YWlzX2h5/YnJpZCZ3PTc0MCZx/PTgw" alt = "thumbnail">
+                        <div class = "avatar-content">
+                            <div class = "avatar">
+                                <img src = "https://www.svgrepo.com/show/498301/profile-circle.svg" alt = "channel avatar" height = "40px" width = "40px">
+                            </div>
+                            <div class = "content">
+                                <h3>Coding course</h3>
+                                <p class = "channel-name">Apna coaching</p>
+                                <div class = "content-status">
+                                    <p>1M views . 1 day ago</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class = "card">
+                        <img src = "https://imgs.search.brave.com/-84W8rbNVimsmP5QwkJXeawkQGRj10amw0LuOQZQkjc/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/ZnJlZS12ZWN0b3Iv/bW9kZXJuLXlvdXR1/YmUtdGh1bWJuYWls/LWRlc2lnbi13aXRo/LWF3ZXNvbWUtdGV4/dC10ZW1wbGF0ZV8x/MzYxLTI3MzcuanBn/P3NlbXQ9YWlzX2h5/YnJpZCZ3PTc0MCZx/PTgw" alt = "thumbnail">
+                        <div class = "avatar-content">
+                            <div class = "avatar">
+                                <img src = "https://www.svgrepo.com/show/498301/profile-circle.svg" alt = "channel avatar" height = "40px" width = "40px">
+                            </div>
+                            <div class = "content">
+                                <h3>Coding course</h3>
+                                <p class = "channel-name">Apna coaching</p>
+                                <div class = "content-status">
+                                    <p>1M views . 1 day ago</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class = "card">
+                        <img src = "https://imgs.search.brave.com/-84W8rbNVimsmP5QwkJXeawkQGRj10amw0LuOQZQkjc/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/ZnJlZS12ZWN0b3Iv/bW9kZXJuLXlvdXR1/YmUtdGh1bWJuYWls/LWRlc2lnbi13aXRo/LWF3ZXNvbWUtdGV4/dC10ZW1wbGF0ZV8x/MzYxLTI3MzcuanBn/P3NlbXQ9YWlzX2h5/YnJpZCZ3PTc0MCZx/PTgw" alt = "thumbnail">
+                        <div class = "avatar-content">
+                            <div class = "avatar">
+                                <img src = "https://www.svgrepo.com/show/498301/profile-circle.svg" alt = "channel avatar" height = "40px" width = "40px">
+                            </div>
+                            <div class = "content">
+                                <h3>Coding course</h3>
+                                <p class = "channel-name">Apna coaching</p>
+                                <div class = "content-status">
+                                    <p>1M views . 1 day ago</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class = "card">
+                        <img src = "https://imgs.search.brave.com/-84W8rbNVimsmP5QwkJXeawkQGRj10amw0LuOQZQkjc/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/ZnJlZS12ZWN0b3Iv/bW9kZXJuLXlvdXR1/YmUtdGh1bWJuYWls/LWRlc2lnbi13aXRo/LWF3ZXNvbWUtdGV4/dC10ZW1wbGF0ZV8x/MzYxLTI3MzcuanBn/P3NlbXQ9YWlzX2h5/YnJpZCZ3PTc0MCZx/PTgw" alt = "thumbnail">
+                        <div class = "avatar-content">
+                            <div class = "avatar">
+                                <img src = "https://www.svgrepo.com/show/498301/profile-circle.svg" alt = "channel avatar" height = "40px" width = "40px">
+                            </div>
+                            <div class = "content">
+                                <h3>Coding course</h3>
+                                <p class = "channel-name">Apna coaching</p>
+                                <div class = "content-status">
+                                    <p>1M views . 1 day ago</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class = "card">
+                        <img src = "https://imgs.search.brave.com/-84W8rbNVimsmP5QwkJXeawkQGRj10amw0LuOQZQkjc/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/ZnJlZS12ZWN0b3Iv/bW9kZXJuLXlvdXR1/YmUtdGh1bWJuYWls/LWRlc2lnbi13aXRo/LWF3ZXNvbWUtdGV4/dC10ZW1wbGF0ZV8x/MzYxLTI3MzcuanBn/P3NlbXQ9YWlzX2h5/YnJpZCZ3PTc0MCZx/PTgw" alt = "thumbnail">
+                        <div class = "avatar-content">
+                            <div class = "avatar">
+                                <img src = "https://www.svgrepo.com/show/498301/profile-circle.svg" alt = "channel avatar" height = "40px" width = "40px">
+                            </div>
+                            <div class = "content">
+                                <h3>Coding course</h3>
+                                <p class = "channel-name">Apna coaching</p>
+                                <div class = "content-status">
+                                    <p>1M views . 1 day ago</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class = "card">
+                        <img src = "https://imgs.search.brave.com/-84W8rbNVimsmP5QwkJXeawkQGRj10amw0LuOQZQkjc/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/ZnJlZS12ZWN0b3Iv/bW9kZXJuLXlvdXR1/YmUtdGh1bWJuYWls/LWRlc2lnbi13aXRo/LWF3ZXNvbWUtdGV4/dC10ZW1wbGF0ZV8x/MzYxLTI3MzcuanBn/P3NlbXQ9YWlzX2h5/YnJpZCZ3PTc0MCZx/PTgw" alt = "thumbnail">
+                        <div class = "avatar-content">
+                            <div class = "avatar">
+                                <img src = "https://www.svgrepo.com/show/498301/profile-circle.svg" alt = "channel avatar" height = "40px" width = "40px">
+                            </div>
+                            <div class = "content">
+                                <h3>Coding course</h3>
+                                <p class = "channel-name">Apna coaching</p>
+                                <div class = "content-status">
+                                    <p>1M views . 1 day ago</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class = "card">
+                        <img src = "https://imgs.search.brave.com/-84W8rbNVimsmP5QwkJXeawkQGRj10amw0LuOQZQkjc/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/ZnJlZS12ZWN0b3Iv/bW9kZXJuLXlvdXR1/YmUtdGh1bWJuYWls/LWRlc2lnbi13aXRo/LWF3ZXNvbWUtdGV4/dC10ZW1wbGF0ZV8x/MzYxLTI3MzcuanBn/P3NlbXQ9YWlzX2h5/YnJpZCZ3PTc0MCZx/PTgw" alt = "thumbnail">
+                        <div class = "avatar-content">
+                            <div class = "avatar">
+                                <img src = "https://www.svgrepo.com/show/498301/profile-circle.svg" alt = "channel avatar" height = "40px" width = "40px">
+                            </div>
+                            <div class = "content">
+                                <h3>Coding course</h3>
+                                <p class = "channel-name">Apna coaching</p>
+                                <div class = "content-status">
+                                    <p>1M views . 1 day ago</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class = "card">
+                        <img src = "https://imgs.search.brave.com/-84W8rbNVimsmP5QwkJXeawkQGRj10amw0LuOQZQkjc/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/ZnJlZS12ZWN0b3Iv/bW9kZXJuLXlvdXR1/YmUtdGh1bWJuYWls/LWRlc2lnbi13aXRo/LWF3ZXNvbWUtdGV4/dC10ZW1wbGF0ZV8x/MzYxLTI3MzcuanBn/P3NlbXQ9YWlzX2h5/YnJpZCZ3PTc0MCZx/PTgw" alt = "thumbnail">
+                        <div class = "avatar-content">
+                            <div class = "avatar">
+                                <img src = "https://www.svgrepo.com/show/498301/profile-circle.svg" alt = "channel avatar" height = "40px" width = "40px">
+                            </div>
+                            <div class = "content">
+                                <h3>Coding course</h3>
+                                <p class = "channel-name">Apna coaching</p>
+                                <div class = "content-status">
+                                    <p>1M views . 1 day ago</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
@@ -224,7 +494,7 @@
             </main>
             
             
-
+        </main>
         </div>
     </body>
 </html>
