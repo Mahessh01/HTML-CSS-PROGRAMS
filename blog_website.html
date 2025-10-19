@@ -73,6 +73,37 @@
                 border-radius: 5rem;
 
             }
+            .h-card{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 5rem;
+                padding: 2rem;
+                box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.1);
+                border-radius: 0.5rem;
+                border: 1px solid #e0e0e0;
+            }
+            .card-content{
+                padding: 2rem;
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+            }
+            .status{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            .read-btn{
+                all: unset;
+                font-weight: 600;
+                
+                border: 1px solid grey;
+            }
+            .read-btn:hover{
+                text-decoration: underline;
+                color: blue;
+            }
 
             
 
@@ -107,6 +138,20 @@
                 </div>
 
             </section>
+            <div class = "h-card">
+                <div class = "card-content">
+                    <h2>Long established</h2>
+                    <p>
+                        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it..
+                    </p>
+                    <div class = "status">
+                        <p> June 20, 2024</p>
+                        <button class = "read-btn">Read more</button>
+                    </div>
+                </div>
+                <img src="https://imgs.search.brave.com/ro0B48phrQQcgyTRMdLL7HHvxWwZ0pxK8LUpJySnWc4/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTE4/NzU1OTI5NS92ZWN0/b3IveW91bmctbWFu/LWF0LWNvbXB1dGVy/LWxlYW5lZC1iYWNr/LWluLWhpcy1jaGFp/ci5qcGc_cz02MTJ4/NjEyJnc9MCZrPTIw/JmM9eHNiQ2JUaFdf/d2ZZV3dBT1RPaGxY/QnQzT1JJMldxT2h4/U1luNlg3Q09GND0" alt="card image" width="300px" height="200px">
+            </div>
+
         </main>
         
     </body>
