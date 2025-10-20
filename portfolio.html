@@ -25,21 +25,22 @@
                 font-size: 1.4rem;
             }
             header{
-                background-color: lightblue;
+                background-color: darkblue;
                 
-
             }
             .container{
                 max-width: 1300px;
                 margin: 0 auto;
-                padding: 0 2rem;
+                
                 
             }
             nav{
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                height: 8rem;
+                height: 8rem; 
+                padding: 1rem;
+               
             }
             a{
                 text-decoration: none;
@@ -51,9 +52,67 @@
                 gap: 3rem;
             }
             .logo{
-                font-size: 2rem;
+                font-size: 4rem;
                 font-weight: 700;
             }
+            nav li{
+                font-size: 1.8rem;
+                font-weight: 500;
+                transition: color 0.3s ease;
+            }
+            nav li:hover{
+                border-bottom: 2px solid white;
+                transition: color 0.3s ease;
+            }
+            #hero{
+               background-color:  #143053 ;
+               padding: 4rem 0;
+            }
+          
+            #hero h1{
+                font-size: 3.6rem;
+                margin-top: 2rem;
+            }
+            #hero .container{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                gap: 5rem;
+            }
+            .hero_content{
+                display: grid;
+                place-items: center;
+            }
+            #hero h1{
+                font-size: 3rem;
+                font-weight: bold;
+            }
+            .hi_text{
+                font-size: 6rem;
+                font-weight: bold;
+                color: orange;
+            }
+            .name-txt{
+                font-size: 5rem;
+            }
+            #hero h2{
+                font-size: 4rem;
+                font-weight: bold;
+                overflow: hidden;
+                border-right: .15em solid orange;
+                white-space: nowrap;
+                margin: 0 auto;
+                animation: typing 5s steps(40, end), blink-caret 0.75s step-end infinite;
+            }
+            @keyframes typing {
+                from { 
+                    width: 0
+                }
+                to { 
+                    width: 100%
+                }
+            }
+
 
         </style>
 
@@ -75,9 +134,21 @@
                 </a>
             </ul>
 
-            
-
         </nav>
        </header>
+       <main>
+            <section id = "hero">
+                <div class = "container">
+                    <div class = "hero_img">
+                        <img src = "https://imgs.search.brave.com/K0pKN44tAOVl2GzugoHM0mRRVzbaHRjZbPTLr_Sb4bg/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pLnJl/ZGQuaXQvamF2aWg3/am5ncW1iMS5qcGc" alt = "Profile Picture" width = "200" height = "200">
+                    </div>
+                    <div class = "hero_content">
+                        <h1><span class="hi_text">Hi</span>, I am <span class = "name-txt">Mahesh</span></h1>
+                        <h2>Frontend Developer</h2>
+                    </div>
+                </div>
+
+            </section>
+       </main>
     </body>
 </html>
