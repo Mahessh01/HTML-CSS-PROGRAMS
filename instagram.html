@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instagram Clone</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #fafafa;
+      display: flex;
+      justify-content: center;
+      color: #262626;
+    }
+
+    /* ===== LEFT SIDEBAR ===== */
+    .sidebar {
+      width: 250px;
+      height: 100vh;
+      border-right: 1px solid #dbdbdb;
+      padding: 20px;
+      position: fixed;
+      left: 0;
+      background-color: white;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 30px;
+    }
+
+    .menu a {
+      display: block;
+      padding: 10px 0;
+      text-decoration: none;
+      color: #262626;
+      font-size: 18px;
+    }
+
+    .menu a:hover {
+      background-color: #f2f2f2;
+      border-radius: 10px;
+      padding-left: 10px;
+    }
+
+    /* ===== MAIN FEED ===== */
+    .feed {
+      width: 600px;
+      margin-left: 270px;
+      padding: 20px;
+    }
+
+    .stories {
+      display: flex;
+      gap: 15px;
+      margin-bottom: 20px;
+    }
+
+    .story {
+      text-align: center;
+    }
+
+    .story img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      border: 2px solid #e1306c;
+    }
+
+    .post {
+      background-color: white;
+      border: 1px solid #dbdbdb;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+
+    .post-header {
+      display: flex;
+      align-items: center;
+      padding: 10px;
+      gap: 10px;
+    }
+
+    .post-header img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+    }
+
+    .post-header h4 {
+      font-size: 16px;
+    }
+
+    .post img {
+      width: 100%;
+      height: auto;
+    }
+
+    .post-caption {
+      padding: 10px;
+      font-size: 14px;
+    }
+
+    /* ===== RIGHT SIDEBAR ===== */
+    .rightbar {
+      width: 300px;
+      margin-left: 900px;
+      padding: 20px;
+      position: fixed;
+      right: 0;
+    }
+
+    .suggestions h4 {
+      margin-bottom: 10px;
+    }
+
+    .suggestion {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .suggestion img {
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+    }
+
+    .suggestion .user {
+      flex: 1;
+      margin-left: 10px;
+      font-size: 14px;
+    }
+
+    .suggestion a {
+      text-decoration: none;
+      color: #0095f6;
+      font-weight: bold;
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 1000px) {
+      .rightbar {
+        display: none;
+      }
+    }
+
+    @media (max-width: 700px) {
+      .sidebar {
+        display: none;
+      }
+      .feed {
+        margin-left: 0;
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- LEFT SIDEBAR -->
+  <div class="sidebar">
+    <div class="logo">Instagram</div>
+    <div class="menu">
+      <a href="#">🏠 Home</a>
+      <a href="#">🔍 Search</a>
+      <a href="#">🎥 Reels</a>
+      <a href="#">💬 Messages</a>
+      <a href="#">❤️ Notifications</a>
+      <a href="#">➕ Create</a>
+      <a href="#">👤 Profile</a>
+    </div>
+  </div>
+
+  <!-- MAIN FEED -->
+  <div class="feed">
+    <div class="stories">
+      <div class="story"><img src="https://i.pravatar.cc/60?img=1"><p>profile1</p></div>
+      <div class="story"><img src="https://i.pravatar.cc/60?img=2"><p>profile2</p></div>
+      <div class="story"><img src="https://i.pravatar.cc/60?img=3"><p>profile3</p></div>
+      <div class="story"><img src="https://i.pravatar.cc/60?img=4"><p>profile4</p></div>
+    </div>
+
+    <div class="post">
+      <div class="post-header">
+        <img src="https://i.pravatar.cc/40?img=5" alt="profile">
+        <h4>techpananews • 2h</h4>
+      </div>
+      <img src="https://images.unsplash.com/photo-1508349937151-22b9ec3b1d3e?auto=format&fit=crop&w=800&q=60" alt="post">
+      <div class="post-caption">
+        <b>Crime:</b> लापरवाहीपूर्वक बाइक चलाउँदै टिकटमार्फत अफवाह फैलाउने दुई युवक पक्राउ।
+      </div>
+    </div>
+  </div>
+
+  <!-- RIGHT SIDEBAR -->
+  <div class="rightbar">
+    <div class="suggestions">
+      <h4>Suggested for you</h4>
+      <div class="suggestion">
+        <img src="https://i.pravatar.cc/35?img=6">
+        <div class="user">aaryaa_pokharel</div>
+        <a href="#">Follow</a>
+      </div>
+      <div class="suggestion">
+        <img src="https://i.pravatar.cc/35?img=7">
+        <div class="user">ishaaa_k</div>
+        <a href="#">Follow</a>
+      </div>
+      <div class="suggestion">
+        <img src="https://i.pravatar.cc/35?img=8">
+        <div class="user">balenshah</div>
+        <a href="#">Follow</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
