@@ -184,6 +184,58 @@
                 text-align: center;
 
             }
+            #contact{
+                background-color: #143053;
+                
+            }
+            #contact h2{
+                text-align: center;
+                font-size: 6rem;
+                margin: 2rem 0;
+                margin-top: -16rem;
+                
+            }
+            #contact .container{
+                display: flex;
+                flex-direction: column;
+                gap: 4rem;
+                height: 90vh;
+                justify-content: center;
+                
+            }
+            .top-contact{
+                max-width: 800px;
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+                margin: 0 auto;
+                gap: 6rem;
+            }
+           
+            .bottom-contact{
+                display: flex;
+                justify-content: center;
+                gap: 6rem;
+            }
+            .contact-way{
+                display: flex;
+                align-items: center;
+                gap: 2rem; 
+                
+            }
+            .contact-way h3{
+                font-size: 2rem;
+            }
+            .footer{
+                background-color: darkblue;
+                text-align: center;
+                padding: 2rem;
+                color: white;
+                clear: both;
+            }
+            .footer .container{
+                font-size: 15px;
+            }
+
             
 
             
@@ -361,40 +413,41 @@
                     <h2>Let's work together...</h2>
                     <div class = "top-contact">
                         <div class = "contact-way">
-                            <img src = "https://www.svgrepo.com/show/448234/linkedin.svg" alt = "linkedin icon" width = "50" height = "50">
+                            <img src = "https://www.svgrepo.com/show/448234/linkedin.svg" alt = "linkedin icon" width = "60" height = "60">
                             <h3>LinkedIn</h3>
                         </div>
 
                         <div class = "contact-way">
-                            <img src = "https://www.svgrepo.com/show/475689/twitter-color.svg" alt = "linkedin icon" width = "50" height = "50">
+                            <img src = "https://www.svgrepo.com/show/475689/twitter-color.svg" alt = "linkedin icon" width = "60" height = "60">
                             <h3>Twitter</h3>
                         </div>
 
                         <div class = "contact-way">
-                            <img src = "https://www.svgrepo.com/show/499760/mail-mail-email.svg" alt = "linkedin icon" width = "50" height = "50">
-                            <h3>@send email</h3>
+                            <img src = "https://www.svgrepo.com/show/499760/mail-mail-email.svg" alt = "linkedin icon" width = "60" height = "60">
+                            <h3>E-mail</h3>
                         </div>
 
                     </div>    
                     <div class = "bottom-contact">
                         <div class = "contact-way">
-                            <img src = "https://www.svgrepo.com/show/448234/linkedin.svg" alt = "linkedin icon" width = "50" height = "50">
-                            <h3>LinkedIn</h3>
+                            <a href="https://www.linkedin.com/in/your-username" target="_blank">
+                            <img src = "https://www.svgrepo.com/show/512317/github-142.svg" alt = "github" width = "60" height = "60">
+                            <h3>github</h3>
                         </div>
 
                         <div class = "contact-way">
-                            <img src = "" alt = "linkedin icon" width = "50" height = "50">
-                            <h3>Twitter</h3>
+                            <img src = "https://www.svgrepo.com/show/533119/mobile.svg" alt = "mobile" width = "60" height = "60">
+                            <h3>mobile</h3>
                         </div>
-
-                        <div class = "contact-way">
-                            <img src = "https://www.svgrepo.com/show/448234/linkedin.svg" alt = "linkedin icon" width = "50" height = "50">
-                            <h3>@send email</h3>
-                        </div>
-
                     </div>    
                 </div>
             </section>
        </main>
+        <footer class="footer">
+            <div class="container">
+                Project By Mahesh
+            </div>
+        </footer>
+
     </body>
 </html>
