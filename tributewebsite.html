@@ -1,19 +1,60 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Tribute_website</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
-    </head>
-    <body>
-       
-        <script src="" async defer></script>
-    </body>
+<head>
+    <title>Tribute Page</title>
+    <style>
+        .main {
+            width: 1000px;
+            border: 2px solid black;
+            margin: auto;
+            display: flex; 
+            height: 700px; 
+
+        }
+
+        .img {
+            width: 50%; 
+            height: 100%;
+            flex-shrink: 0; 
+        }
+
+        .img img {
+            /* Make the image fill the container properly */
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* crucial for maintaining aspect ratio */
+        }
+
+        .info {
+            width: 50%; /* Take up half of the .main width */
+            font-size: 20px;
+            padding: 10px; /* Add padding for readability */
+            overflow-y: auto;  
+            overflow-x: hidden; /* Hide horizontal scroll */
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="img">
+            <img src="https://imgs.search.brave.com/pz66te6GOLq4WNgvO1Qh2cOXSkGLH9Uuz0LvHZ50WNo/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/aXNwby5jb20vc2l0/ZXMvZGVmYXVsdC9m/aWxlcy9zdHlsZXMv/aGFsZl9jb250ZW50/X3dpZHRoX3Bob25l/L3B1YmxpYy8yMDIz/LTAyL3RodW1ibmFp/bF9QYXNhbmctTGhh/bXUtU2hlcnBhLmpw/ZWc_aXRvaz0wczdU/N0E5cw" alt="Pasang Lhamu Sherpa">
+        </div>
+
+        <div class="info">
+            <p>
+                <b>Name: Pasang Lhamu Sherpa</b>
+                <br>
+                <b>Occupation: Mountaineer</b>
+                <br>
+                Description:
+                <br>
+                She was born into a mountaineering family and was involved in climbing from her teens. She had successfully climbed Mount Blanc, Mount Cho Oyu, Mount Yalapic, Pisang Himal, and others. She had attempted to climb Mount Everest three times but did not succeed until April 22, 1993, when she reached the summit by the South Col via the Southeast Ridge route.[4][5]
+
+                The morning of April 22, 1993, was bright and clear and remained so until Pasang reached the top of the 8,848 m. peak with five Sherpas, Sonam Tshering Sherpa, Lhakpa Norbu Sherpa, Pemba Dorje Sherpa, and Dawa Tashi Sherpa. Meanwhile, a member of the team and five-time Everest summitter Sonam Tshering Sherpa got seriously sick at south summit and, despite Pasang Lhamu's efforts to help, did not survive his illness. While descending from the summit, the weather, as often happens in the mountains, suddenly turned bad, causing her to lose her own life on the south summit.[6] Vladas Vitkauskas helped move her body down the mountain.
+
+                For achieving what no other Nepalese woman had achieved before her, Pasang Lhamu was posthumously honored by her country and mountaineers all around the world in various ways. She was the very first woman to be decorated with the "Nepal Tara (Star)" by the King of Nepal. The National Youth Foundation conferred the 1993-94 Youth Excellence Award on her. Similarly, in order to commemorate her feat, a life-size statue of Pasang Lhamu was erected at Bouddha, Chuchepati; a postage stamp was issued in her name; the Government of Nepal renamed Jasamba Himal (7,315 m) in the Mahalangur Range as Pasang Lhamu Peak; the Ministry of Agriculture named a special strain of wheat as Pasang Lhamu wheat; the Pasang Lhamu Memorial Hall was established in Dhulabari of Jhapa district in east Nepal; and the 117 km Trishuli-Dunche road was named the Pasang Lhamu Highway.
+            </p>
+        </div>
+    </div>
+</body>
 </html>
